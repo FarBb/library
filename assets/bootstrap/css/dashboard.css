@@ -1,0 +1,243 @@
+  .sub-header {
+    border-bottom: 2px solid #C9C9C9;
+  }
+
+  .line {
+    border-top: 2px solid #C9C9C9;
+  }
+
+/*
+ * Sidebar
+ */
+
+  .sidebar {
+    position: fixed;
+    bottom: 0;
+    top:0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 0px;
+    padding-top: 0;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    background-color: #404040;
+    color: #FFF;
+    padding-bottom: 50px;
+  }
+
+/* Sidebar navigation */
+  .nav-sidebar{
+    /*margin-right: -21px; /* 20px padding + 1px border */
+    /*margin-left: -20px;*/
+    /* margin-bottom: 50px; */
+  }
+  .nav-sidebar > li > a {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .nav-sidebar > .active > a,
+  .nav-sidebar > .active > a:hover,
+  .nav-sidebar > .active > a:focus {
+    color: #1BBC98;
+    background-color: #fff;
+    border-left: 5px solid #1BBC98;
+    padding-left: 15px;
+  }
+  .nav-sidebar > li > a:hover,
+  .nav-sidebar > li:hover > a{
+    border-left: 5px solid rgba(0,0,0,0.4);
+    padding-left: 20px; 
+    transition: 0.15s; 
+    background-color: #1BBC98;
+  }
+  .nav-sidebar  a{
+    color: #f5f5f5;
+  }
+  .nav-sidebar > li > a > span{
+    margin-right: 10px;
+  }
+/*end of sidebar config*/
+
+/*placeholders*/
+  .placeholders {
+    padding: 0;
+    text-align: center;
+  }
+  .placeholders a {
+    border-radius: 0;
+    margin: 0 3px 3px;
+    padding: 5% 0 5%;
+    text-decoration: none;
+    border: 3px solid #019875;
+    width: 23%;
+    height: auto;
+    color: #fff;
+    font-size: 26px;
+    display: block;
+    float: left;
+    background: #019875;
+    cursor: pointer;
+    transition: 0.25s;
+  }
+  .placeholders a:hover {
+    border-radius: 0;
+    border: 3px solid #1BBC98;
+    background: #1BBC98;
+    transition: 0.25s;
+    color: #FFF;
+  }
+
+  
+  /*end of placeholders*/
+
+  .placeholder {
+    margin-bottom: 20px;
+  }
+  .placeholder img {
+    display: inline-block;
+  }
+
+  .sub-header{
+    color: #C9C9C9;
+  }
+
+  .main {
+    padding: 15 15 0 15px;
+  }
+  .profilewrapper{
+    padding: 0;
+    margin: 0px 0px 15px 0px;
+  }
+  .upic{
+    background: #fff;
+    border-radius: 5%;
+    padding: 2px;
+    width: 40%;
+    margin-bottom: 4px;
+  }
+  .uimg{
+    border-radius: 5%;
+    padding: 0;
+    margin: 0;
+    position: inherit;
+    width: 100%;
+    height: 13%;
+  }
+  .profile_info {
+    font-size: 14px;
+    line-height: 30px;
+    color: #BAB8B8;
+  }
+  .sidebar-footer {
+    bottom: 0px;
+    clear: both;
+    display: block;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+  }
+  .sidebar-footer a {
+    padding: 10px 0 10px;
+    text-align: center;
+    width: 25%;
+    color: #fff;
+    font-size: 18px;
+    display: block;
+    float: left;
+    background: #1BBC98;
+    cursor: pointer;
+    transition: 0.25s;
+  }
+  .sidebar-footer a:hover{
+    background: #019875;
+    transition: 0.25s;
+  }
+  .brand{
+    padding: 10 0 0 20px;
+    color: #1BBC98;
+    font-size: 28px;
+    margin-bottom: 25px;
+  }
+  .pag{
+    position: fixed;
+    left: 55%;
+    bottom: 0.1%;
+  }
+
+/*for width under 900px */  
+@media screen and (max-width: 900px) {
+  .main {
+    padding: 15 15 0 15px;
+  }
+  .profilewrapper{
+    padding: 0;
+    margin: 0px 0px 15px 0px;
+  }
+  .upic{
+    background: #fff;
+    border-radius: 5%;
+    padding: 2px;
+    width: 35%;
+    margin-bottom: 2px;
+  }
+  .uimg{
+    border-radius: 5%;
+    padding: 0;
+    margin: 0;
+    position: inherit;
+    width: 100%;
+    height: 13%;
+  }
+  .sidebar-footer {
+    bottom: 0px;
+    clear: both;
+    display: block;
+    position: fixed;
+    margin: 0px 0px 0px 0px;
+    padding: 0;
+  }
+  .sidebar-footer a {
+    padding: 10px 0 10px;
+    text-align: center;
+    width: 25%;
+    color: #fff;
+    font-size: 12px;
+    display: block;
+    float: left;
+    background: #1BBC98;
+    cursor: pointer;
+    transition: 0.25s;
+  }
+  .sidebar-footer a:hover{
+    background: #019875;
+    transition: 0.25s;
+  }
+  .brand{
+    padding: 10 0 0 20px;
+    color: #1BBC98;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  .pag{
+    position: fixed;
+    left: 55%;
+    bottom: 0.1%;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .sidebar{
+    display: none;
+  }
+}
+
+.main .page-header {
+  margin-top: 0;
+  padding-bottom: 3px;
+}
+
+
+/* footer */
+
+
